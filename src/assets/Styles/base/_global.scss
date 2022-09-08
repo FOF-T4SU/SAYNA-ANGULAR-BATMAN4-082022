@@ -1,0 +1,40 @@
+@import "./color";
+@import "./typo";
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $black;
+    color: $white;
+    font-family: "Space Grotesk Regular", Tahoma, sans-serif;
+    font-size: 18px;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-family: "Rajdhani", Verdana, sans-serif;
+    padding: 10px 0px;
+    margin: 15px 0px;
+    font-size: 36px;
+}
+
+button {
+    font-family: "Rajdhani", Verdana, sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0px;
+    div {
+        text-align: center;
+    }
+}

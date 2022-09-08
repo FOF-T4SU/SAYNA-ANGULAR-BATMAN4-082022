@@ -1,0 +1,33 @@
+@import "../base/global";
+header {
+    // z-index: 100;
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 45px;
+    }
+    div {
+        display: block;
+        z-index: 100;
+    }
+    ul {
+        // display: flex;
+        display: block;
+        z-index: 100;
+    }
+    li {
+        display: inline-block;
+        list-style: none;
+        padding: 15px;
+    }
+    a {
+        text-decoration: none;
+        color: $white;
+        font-size: 22px;
+        // z-index: 100;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

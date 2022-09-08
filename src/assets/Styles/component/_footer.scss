@@ -1,0 +1,23 @@
+@import "../base/global";
+footer {
+    padding: 20vh 0px;
+    height: 70vh;
+    div {
+        text-align: center;
+    }
+    span {
+        font-size: 12px;
+        position: relative;
+        top: -20px;
+    }
+    img {
+        margin: 15px;
+    }
+    img[alt="logo_x"],
+    img[alt="logo_fb"],
+    img[alt="logo_tw"],
+    img[alt="logo_ig"] {
+        position: relative;
+        top: -10px;
+    }
+}

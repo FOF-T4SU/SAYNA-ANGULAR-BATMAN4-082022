@@ -1,0 +1,219 @@
+@import "../component/header";
+@import "../component/fixed";
+@import "../component/footer";
+// Design De la section hero
+#hero {
+    background-image: url("../../Assets/Illustrations/Home/Bathome1.png");
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    position: relative;
+    top: -140px;
+    min-height: 900px;
+    .container {
+        width: 35%;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 300px;
+    }
+    .button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    button {
+        margin: 15px 0px;
+        padding: 15px;
+        background: linear-gradient(180deg, $gray 20%, $blue);
+        opacity: 40%;
+        color: $white;
+        border: none;
+        cursor: pointer;
+        &:hover {
+            background: linear-gradient(180deg, $gray 20%, $blue);
+            opacity: 100%;
+        }
+    }
+    img {
+        position: relative;
+        top: 130px;
+    }
+}
+
+// Design de la section batman
+#batman {
+    padding: 0px 30px;
+    p {
+        width: 70%;
+        text-align: justify;
+    }
+}
+
+// Design de la section nemesis
+#nemesis {
+    padding: 0px 30px;
+    p {
+        width: 70%;
+        text-align: justify;
+    }
+    .shuriken {
+        // display: none;
+        position: relative;
+        left: 100px;
+        top: 50px;
+    }
+}
+
+// Design de la section allies
+#allies {
+    padding: 0px 30px;
+    p {
+        width: 70%;
+        text-align: justify;
+    }
+    .black_bat {
+        // display: none;
+        position: relative;
+        right: -750px;
+        top: 50px;
+    }
+}
+
+// Design de la section league
+#league {
+    h2,
+    p {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+// Design de la section multimedia
+#multimedia {
+    .annonce {
+        display: flex;
+        justify-content: center;
+        img {
+            border-top: 1px solid $gray;
+            border-left: 1px solid $gray;
+            border-bottom: 1px solid $gray;
+            border-radius: 25px 0px 0px 25px;
+        }
+        div {
+            width: 50%;
+            padding: 15px;
+            background: linear-gradient(120deg, $black_bat 40%, $blue);
+            border-top: 1px solid $gray;
+            border-right: 1px solid $gray;
+            border-bottom: 1px solid $gray;
+            border-radius: 0px 25px 25px 0px;
+        }
+        span {
+            color: $yellow_bat;
+        }
+    }
+    img[alt*="gauche"] {
+        float: left;
+        position: relative;
+        top: 100px;
+    }
+    img[alt*="droite"] {
+        float: right;
+        position: relative;
+        top: -150px;
+    }
+}
+
+// Design de la section contact
+#contact {
+    background: linear-gradient(135deg, $black_bat 50%, $blue 100%);
+    margin: 50px 0px;
+    padding: 30px 0px;
+    h2 {
+        text-align: center;
+    }
+    form {
+        width: 80%;
+        margin: auto;
+        font-size: 22px;
+        p {
+            padding: 15px 0px;
+        }
+        select,
+        option {
+            width: 100%;
+            font-size: 18px;
+            border-bottom: 2px solid $gray_bat;
+            color: $gray_bat;
+            padding: 15px 0px;
+            background: none;
+        }
+        input[type="radio"] {
+            display: none;
+        }
+        label[for="film"],
+        label[for="comic"],
+        label[for="tout"] {
+            border: 1px solid $blue;
+            background: none;
+            display: inline-block;
+            color: $white;
+            padding: 15px;
+            margin: 15px;
+            &:hover {
+                background: linear-gradient(135deg, $transparent, $blue);
+                opacity: 100%;
+            }
+        }
+        input[type="submit"] {
+            margin: auto;
+            padding: 15px 30px;
+            border: none;
+            background: linear-gradient(90deg, $transparent, $red);
+            opacity: 40%;
+            color: $white;
+            &:hover {
+                opacity: 100%;
+            }
+        }
+        .saisi {
+            width: 100%;
+            font-size: 18px;
+            border: none;
+            border-bottom: 2px solid $gray_bat;
+            background: none;
+        }
+    }
+}
+
+// Design de la section citation
+#citation {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 0px;
+    padding: 50px 50px;
+    div:not(div[class="container"]) {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        p {
+            margin: 30px 0px;
+        }
+        .auteur {
+            color: $gray;
+            width: 65%;
+            margin: auto;
+        }
+    }
+    img[alt*="gauche"] {
+        float: left;
+        position: relative;
+        top: -50px;
+    }
+    img[alt*="droite"] {
+        float: right;
+        position: relative;
+        top: 50px;
+    }
+}

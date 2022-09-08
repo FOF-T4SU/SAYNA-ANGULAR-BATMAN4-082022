@@ -1,0 +1,14 @@
+@import "../base/global";
+.social {
+    position: fixed;
+    top: 300px;
+    right: 0px;
+    z-index: 100;
+    img {
+        display: block;
+        margin: 30px 60px;
+    }
+    img[alt*="icon"] {
+        margin-left: 100px;
+    }
+}
