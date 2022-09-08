@@ -4,6 +4,7 @@ import { EShopComponent } from './components/e-shop/e-shop.component';
 import { GameComponent } from './components/game/game.component';
 import { HomeComponent } from './components/home/home.component';
 import { MonCompteComponent } from './components/mon-compte/mon-compte.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'game', component: GameComponent },
   { path: 'e-shop', component: EShopComponent },
   { path: 'mon-compte', component: MonCompteComponent },
+  { path: '**', component: NotFoundPageComponent },
 ];
 
 @NgModule({

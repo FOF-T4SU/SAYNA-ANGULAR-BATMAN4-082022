@@ -8,6 +8,7 @@ import { EShopComponent } from './components/e-shop/e-shop.component';
 import { MonCompteComponent } from './components/mon-compte/mon-compte.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BarNavComponent } from './components/bar-nav/bar-nav.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BarNavComponent } from './components/bar-nav/bar-nav.component';
     EShopComponent,
     MonCompteComponent,
     FooterComponent,
-    BarNavComponent
+    BarNavComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
