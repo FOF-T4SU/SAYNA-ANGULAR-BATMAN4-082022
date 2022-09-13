@@ -1,0 +1,38 @@
+#hero_e-shop {
+    background-image: url("../../../assets/bg/bg_1.png");
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    position: relative;
+    top: -140px;
+    min-height: 700px;
+    .container {
+        width: 35%;
+        margin: auto;
+        text-align: center;
+        position: relative;
+        top: 200px;
+    }
+    h2 {
+        width: 750px;
+        text-transform: uppercase;
+        position: relative;
+        left: -450px;
+        font-size: 60px;
+    }
+    img {
+        position: relative;
+        top: 400px;
+    }
+}
+
+.catalog {
+    display: flex;
+    justify-content: space-around;
+    .aside {
+        width: 25%;
+    }
+    .product {
+        width: 75%;
+    }
+}

@@ -1,0 +1,25 @@
+<main>
+    <section>
+        <div class="result">
+            <div>
+                <p>resultats: <span>{{products.length}}</span></p>
+            </div>
+            <div>
+                <p>trier par <i class="fa-solid fa-chevron-down" style="color: red;"></i></p>
+            </div>
+        </div>
+        <div class="article">
+            <ng-container *ngFor="let productItem of products">
+                <div>
+                    <div class="articleCard">
+                        <img [src]="productItem.image_url" alt="article">
+                        <p>{{productItem.nom_article}}</p>
+                        <p>{{productItem.prix | currency:'EUR'}}</p>
+                    </div>
+                    <button>ajouter au panier</button>
+                </div>
+            </ng-container>
+            
+        </div>
+    </section>
+</main>
