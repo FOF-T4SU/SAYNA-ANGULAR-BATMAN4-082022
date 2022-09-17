@@ -18,7 +18,6 @@ import { AsideComponent } from './components/aside/aside.component';
 import { ProductComponent } from './components/product/product.component';
 import { ButtonComponent } from './components/button/button.component';
 import { SingleProductComponent } from './components/single-product/single-product.component';
-import { CommndeComponent } from './components/commnde/commnde.component';
 import { CommandeComponent } from './components/commande/commande.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
@@ -37,7 +36,6 @@ import { SignupComponent } from './components/signup/signup.component';
     ProductComponent,
     ButtonComponent,
     SingleProductComponent,
-    CommndeComponent,
     CommandeComponent,
     LoginComponent,
     SignupComponent,
