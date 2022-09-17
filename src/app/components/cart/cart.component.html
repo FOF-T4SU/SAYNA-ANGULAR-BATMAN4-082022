@@ -1,7 +1,40 @@
 <main>
-    <section class="container">
-        <div>
-            <i class="fa-solid fa-cart-shopping"></i>
+
+    <ng-container *ngIf="products.lenght == 0">
+        <section class="container">
+            <div style="display: flex; flex-direction:column;">
+                <h1>Ton Panier Est Vide!!!</h1>
+                <app-button text="aire des commandes"></app-button>
+            </div>
+        </section>
+    </ng-container>
+
+    <ng-container *ngIf="products.lenght != 0">
+        <section class="container">
+            <div style="display: flex; flex-direction:column;">
+                <ng-container *ngFor="let productItem of products">
+                    <div style="border: 2px solid white; display: flex; justify-content: space-between;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <div><img [src]="productItem.image_url"></div>
+                            <div>
+                                <h1>{{productItem.nom_article}}</h1>
+                                <span>Numero de produit: X00{{productItem.id}}</span>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>{{productItem.prix | currency:'EUR'}}</h3>
+                            <app-button (click)="removeItem(productItem)" text="supprimer du panier"></app-button>
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+
+        </section>
+
+        <div style="display:flex; justify-content:space-between;" class="container">
+            <app-button text="passer la commande" routerLink="commande"></app-button>
+            <h2>sous total: {{grandTotal | currency:'EUR '}}</h2>
         </div>
-    </section>
+    </ng-container>
+
 </main>

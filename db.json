@@ -196,10 +196,66 @@
         }
     ],
     "comments": [{
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-    }],
+            "idcommentaires": "1",
+            "contenu": "Mon cadeau préféré",
+            "idUsers": "1",
+            "idArticles": "13"
+        },
+        {
+            "idcommentaires": "2",
+            "contenu": "Excellent",
+            "idUsers": "2",
+            "idArticles": "12"
+        },
+        {
+            "idcommentaires": "3",
+            "contenu": "Trop bien",
+            "idUsers": "3",
+            "idArticles": "10"
+        },
+        {
+            "idcommentaires": "4",
+            "contenu": "J'adore",
+            "idUsers": "4",
+            "idArticles": "11"
+        },
+        {
+            "idcommentaires": "5",
+            "contenu": "Je recommande",
+            "idUsers": "5",
+            "idArticles": "8"
+        },
+        {
+            "idcommentaires": "6",
+            "contenu": "Bonne qualité",
+            "idUsers": "6",
+            "idArticles": "9"
+        },
+        {
+            "idcommentaires": "7",
+            "contenu": "J'ai adoré",
+            "idUsers": "1",
+            "idArticles": "5"
+        },
+        {
+            "idcommentaires": "8",
+            "contenu": "Mon préféré",
+            "idUsers": "2",
+            "idArticles": "4"
+        },
+        {
+            "idcommentaires": "9",
+            "contenu": "Mon article favoris",
+            "idUsers": "3",
+            "idArticles": "6"
+        },
+        {
+            "idcommentaires": "10",
+            "contenu": "Satisfait ",
+            "idUsers": "4",
+            "idArticles": "3"
+        }
+    ],
     "profile": {
         "name": "typicode"
     }

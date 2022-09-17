@@ -16,7 +16,7 @@
                         <p>{{productItem.nom_article}}</p>
                         <p>{{productItem.prix | currency:'EUR'}}</p>
                     </div>
-                    <app-button text="ajouter au panier"></app-button>
+                    <app-button text="ajouter au panier" (click)="addToCart(productItem)"></app-button>
                 </div>
             </ng-container>
         </div>
