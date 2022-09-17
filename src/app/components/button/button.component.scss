@@ -1,0 +1,11 @@
+button {
+    margin: auto;
+    padding: 15px 65px;
+    border: none;
+    background: linear-gradient(90deg, #eddebf, #b11313);
+    opacity: 40%;
+    color: white;
+    &:hover {
+        opacity: 100%;
+    }
+}

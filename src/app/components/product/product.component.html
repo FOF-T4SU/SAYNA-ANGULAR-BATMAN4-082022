@@ -9,17 +9,19 @@
             </div>
         </div>
         <div class="article">
-            <ng-container *ngFor="let productItem of products">
+            <ng-container *ngFor="let productItem of products | paginate: { itemsPerPage: 6, currentPage: p }">
                 <div>
                     <div class="articleCard">
-                        <img [src]="productItem.image_url" alt="article">
+                        <img [src]="productItem.image_url" alt="article" routerLink="product/{{productItem.id}}">
                         <p>{{productItem.nom_article}}</p>
                         <p>{{productItem.prix | currency:'EUR'}}</p>
                     </div>
-                    <button>ajouter au panier</button>
+                    <app-button text="ajouter au panier"></app-button>
                 </div>
             </ng-container>
-            
+        </div>
+        <div class="pagination">
+            <pagination-controls (pageChange)="p = $event" previousLabel="Precedent" nextLabel="Suivant"></pagination-controls>
         </div>
     </section>
 </main>

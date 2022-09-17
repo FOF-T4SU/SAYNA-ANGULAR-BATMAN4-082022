@@ -4,6 +4,8 @@ import { EShopComponent } from './components/e-shop/e-shop.component';
 import { GameComponent } from './components/game/game.component';
 import { HomeComponent } from './components/home/home.component';
 import { MonCompteComponent } from './components/mon-compte/mon-compte.component';
+import { CartComponent } from './components/cart/cart.component';
+import { SingleProductComponent } from './components/single-product/single-product.component';
 import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
 
 const routes: Routes = [
@@ -12,6 +14,8 @@ const routes: Routes = [
   { path: 'game', component: GameComponent },
   { path: 'e-shop', component: EShopComponent },
   { path: 'mon-compte', component: MonCompteComponent },
+  { path: 'cart', component: CartComponent },
+  { path: 'e-shop/product/:id', component: SingleProductComponent },
   { path: '**', component: NotFoundPageComponent },
 ];
 
